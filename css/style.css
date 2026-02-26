@@ -12,7 +12,7 @@ body {
 }
 
 body {
-
+ 
 }
 
 header { 
@@ -20,4 +20,25 @@ header {
     margin: 0px auto;
     /* background-color: white; */
     padding: 30px
+}
+
+header h1{
+    text-align: center;
+}
+
+nav {
+    width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-left: -30px;
+}
+
+nav ul {
+ list-style: none;
+ display:grid;
+ grid-template-columns: 1fr 1fr 1fr
+ gap: 10px;
+ justify-items: center;
+ margin: 200;
+ padding: 200;
 }
