@@ -1,15 +1,58 @@
 :root{
    --page-width: 960px;
-   --primary-color: #0645ad;
+   --primary-color: #005030;
    --border-color: #a2a9b1;
    --background-color: #f8f9fa;
-   --font-main: Georgia, serif
+   --font-main: Georgia, "Times New Roman" serif;
    }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+nav {
+    border: 1px solid var(--border-color);
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    min-width: 200px;
+    display: inline-block;
+    background-color: var(--background-color);
+}
+
+nav::before {
+    content: "Contents";
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+nav ul {
+ list-style: none;
+}
+
+nav ul li:
+
+
+nav ul li {
+    padding: 2px 0;
+    font-size: 14px;
+}
+
+nav ul li::before {
+    color: #202122;
+}
+
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 body {
@@ -34,22 +77,91 @@ header {
 
 header h1{
     text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    font-family: var(--font-main);
+    border-bottom: none;
+    color:black;
 }
 
-nav {
-    width: auto;
-    height: 100;
-    margin: 0 auto;
-    padding: 30px;
+
+
+main {
+    line-height: 1.7;
+}
+
+main > p:first-child {
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: normal;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+main ul {
     margin-left: 30px;
+    margin-bottom: 15px;
 }
 
-nav ul {
- list-style: none;
- display:grid;
- grid-template-columns: 1fr 1fr 1fr
- gap: 10px;
- justify-items: center;
- margin: 200px;
- padding: 200px;
+main ul li {
+    padding: 3px 0;
+}
+
+img {
+    float: right;
+    margin: 0 0 20px 20px;
+    border: 1px solid var(--border-color);
+    padding: 5px;
+    background-color: var(--background-color);
+    display: block;
+}
+
+main a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+
+}
+
+main a:visited {
+    color: #1803ff;
+}
+
+mark {
+    background-color: transparent;
+    font-weight: bold;
+
+}
+
+footer {
+    border-top: 1px solid var(--border-color);
+    margin-top: 30px;
+    padding: 15px 0;
+    font-size: 12px;
+    color: #54595d;
+    text-align: center;
+    clear: both;
 }
