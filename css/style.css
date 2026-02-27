@@ -39,7 +39,7 @@ nav ul {
  list-style: none;
  display: grid;
  grid-template-columns: 1fr;
- gap: 4;
+ gap: 4px;
 }
 
 
@@ -49,13 +49,16 @@ nav ul li {
 }
 
 nav ul li a:hover {
+    color: #F47321;
     text-decoration: underline;
 }
 
 nav ul li a {
     color: var(--primary-color);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
+
 
 figure.infobox {
     float: right;
