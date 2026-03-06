@@ -7,10 +7,6 @@ nav {
     margin-bottom: 20px;
 }
 
-body {
-    background-color: aqua;
-}
-
 footer {
     grid-column: 1;
 }
