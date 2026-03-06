@@ -1,1 +1,17 @@
-@import "style.css"
+@import "style.css";
+
+
+nav {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: aqua;
+}
+
+footer {
+    grid-column: 1;
+}
+
