@@ -2,6 +2,11 @@
 
 @import "style.css";
 
+
+body {
+    font-size: 18px;
+}
+
 nav {
     position: static;
     width: 100%;
@@ -9,9 +14,6 @@ nav {
     font-size: 18px;
 }
 
-body {
-    font-size: 18px;
-}
 
 footer {
     grid-column: 1;
