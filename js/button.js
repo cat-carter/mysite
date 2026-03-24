@@ -15,3 +15,13 @@ hideMenuButton.addEventListener("click", function () {
   menuButton.style.display = "block";
   hideMenuButton.style.display = "none";
 });
+
+let tooltip = document.getElementById("tooltip");
+hideMenuButton.addEventListener("mouseover", function () {
+  tooltip.innerHTML = "Hide table of contents";
+  tooltip.style.display = "block";
+});
+hideMenuButton.addEventListener("mouseout", function () {
+  tooltip.style.display = "none";
+}
+);

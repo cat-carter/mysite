@@ -44,6 +44,24 @@ nav {
     margin-bottom: 8px;
 }
 
+.tooltip-wrapper {
+    position: relative;
+    display: inline-block;
+}   
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
 
 nav ul {
  list-style: none;
