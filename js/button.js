@@ -3,6 +3,8 @@
 const hideMenuButton = document.getElementById("hide-menu-button");
 const menuButton = document.getElementById("menu-button");
 const nav = document.querySelector("nav");
+let menuTooltip = document.getElementById("menu-tooltip");
+let tooltip = document.getElementById("tooltip");
 
 menuButton.addEventListener("click", function () {
   nav.classList.toggle("hidden");
@@ -13,10 +15,15 @@ menuButton.addEventListener("click", function () {
 hideMenuButton.addEventListener("click", function () {
   nav.classList.add("hidden");
   menuButton.style.display = "block";
-  hideMenuButton.style.display = "none";
+  hideMenuButton.style.display = "none"
+  menuTooltip.style.display = "block";
+
+  setTimeout(function () {
+  menuTooltip.style.display = "none";
+}, 3000); 
 });
 
-let tooltip = document.getElementById("tooltip");
+
 hideMenuButton.addEventListener("mouseover", function () {
   tooltip.innerHTML = "Hide table of contents";
   tooltip.style.display = "block";
@@ -25,3 +32,4 @@ hideMenuButton.addEventListener("mouseout", function () {
   tooltip.style.display = "none";
 }
 );
+
