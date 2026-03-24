@@ -27,13 +27,23 @@ nav {
     top: 20px;
 }
 
-nav::before {
+/*.nav-header {
     content: "Contents";
     display: block;
     font-weight: bold;
     font-size: 14px;
+    margin-bottom: 8px; 
+} */
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
     margin-bottom: 8px;
 }
+
 
 nav ul {
  list-style: none;
