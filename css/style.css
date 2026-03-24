@@ -35,6 +35,8 @@ nav {
     margin-bottom: 8px; 
 } */
 
+/* had to change .nav-header to a div in the html because I get the hide button to show up next to "Contents" */
+
 .nav-header {
     display: flex;
     justify-content: space-between;
