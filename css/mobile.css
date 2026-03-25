@@ -1,4 +1,3 @@
-/* Not sure what else I should really do as I feel like it already looks pretty decent on a mobile device and I already had a vertical navigation as I was trying to emulate a Wikipedia page.*/
 
 @import "style.css";
 
@@ -7,15 +6,38 @@ body {
     font-size: 14px;
 }
 
-nav {
+/*
+ nav {
     position: static;
     width: 100%;
     margin-bottom: 20px;
     font-size: 18px;
-}
+} */
 
 
 footer {
     grid-column: 1;
 }
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+   
+}   
+
+#menu-button {
+    display: block; 
+
+}
+nav {
+    display: none;
+}
+
+figure.infobox {
+    float:none;
+    margin: 0 auto 20px 0;
+    width: 100%;    
+}
+    
 

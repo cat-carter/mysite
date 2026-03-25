@@ -7,20 +7,22 @@ let menuTooltip = document.getElementById("menu-tooltip");
 let tooltip = document.getElementById("tooltip");
 
 menuButton.addEventListener("click", function () {
-  nav.classList.toggle("hidden");
+  /*nav.classList.toggle("hidden"); */
+  nav.style.display = "block";
   menuButton.style.display = "none";
   hideMenuButton.style.display = "block";
 });
 
 hideMenuButton.addEventListener("click", function () {
+  nav.style.display = "";
   nav.classList.add("hidden");
   menuButton.style.display = "block";
-  hideMenuButton.style.display = "none"
+  hideMenuButton.style.display = "none";
   menuTooltip.style.display = "block";
 
   setTimeout(function () {
   menuTooltip.style.display = "none";
-}, 3000); 
+}, 2000); 
 });
 
 
