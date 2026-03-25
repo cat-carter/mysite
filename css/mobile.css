@@ -6,32 +6,36 @@ body {
     font-size: 14px;
 }
 
-/*
+
  nav {
     position: static;
     width: 100%;
-    margin-bottom: 20px;
-    font-size: 18px;
-} */
+    grid-column: 1;
+    grid-row: auto;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+    font-size: 15px;
+    display: none;
+}
 
 
 footer {
     grid-column: 1;
+    align-items: center;
 }
 
 .page-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-   
+    padding: 0 15px;
+    overflow: visible;
+    column-gap: 0;
 }   
 
 #menu-button {
     display: block; 
 
-}
-nav {
-    display: none;
 }
 
 figure.infobox {
@@ -40,4 +44,15 @@ figure.infobox {
     width: 100%;    
 }
     
+header {
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
 
+main {
+    grid-column: 1;
+    grid-row: 3;
+    overflow: visible;
+}

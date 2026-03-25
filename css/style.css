@@ -226,7 +226,7 @@ header h1{
     cursor: pointer;
     background: none;
     border: none;
-    display: none;
+    display: none
 }
 
 .hidden {
