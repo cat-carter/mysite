@@ -28,9 +28,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding: 0 15px;
-    overflow: visible;
-    column-gap: 0;
 }   
 
 #menu-button {
