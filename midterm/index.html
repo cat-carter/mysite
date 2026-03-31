@@ -11,17 +11,22 @@
     <p> Everyone learns differently, wheather through seeing, listening, doing, or reflecting. Answer 10 quick questions to discover your natural learning style.</p>
 
     <p>10 Questions | 2-3 Mintutes </p>
-    <p><em>Note: This quiz is for entertainment purposes only and is not a scientifically validated assessment of learning styles.</em></p>
-
-
+    
 `
     <form id="quiz-form">
-        <div class="question">
+        <div class="progress-wrapper"
+        <div class="progress-bar">
+            <div class="progress fill" style="width: 0%"></div>
+        </div>
+        <p class="progress-label">0% Complete</p>
+    </div>
+    <div class="question">
             <p>1. When learning something new, you prefer:</p>
             <label><input type="radio" name="q1" value="Visual"> Watch a video or see a demonstration</label><br>
             <label><input type="radio" name="q1" value="Auditory"> Listen to an explanation or discussion</label><br>
             <label><input type="radio" name="q1" value="Kinesthetic"> Try it out yourself right away</label><br>
             <label><input type="radio" name="q1" value="Reflective"> Read about it and think it through first</label>
+            </div>
         </div>
 
         <div class="question">
@@ -60,32 +65,29 @@
 
         </div>
 
-
 <div class="question">
             <p>6. Your ideal learning environment is:</p>
             <label><input type="radio" name="q6" value="Visual"> Visually organized and clean</label><br>
-            <label><input type="radio" name="q6" value="Auditory"> Quiet with clear explanations<label><br>
-            <label><input type="radio" name="q6" value="Kinesthetic"> Interactive and active<label><br>
+            <label><input type="radio" name="q6" value="Auditory"> Quiet with clear explanations</label><br>
+            <label><input type="radio" name="q6" value="Kinesthetic"> Interactive and active</label><br>
             <label><input type="radio" name="q6" value="Reflective">Structured with written materials</label>
 
         </div>
 
-      
-
 <div class="question">
             <p>7. When learning a new app or tool, you:</p>
-            <label><input type="radio" name="q8" value="Visual"> Watch a tutorial</label><br>
-            <label><input type="radio" name="q8" value="Auditory"> Listen to someone explain it<label><br>
-            <label><input type="radio" name="q8" value="Kinesthetic"> Click around and explore<label><br>
-            <label><input type="radio" name="q8" value="Reflective">Structured with written materials</label>
+            <label><input type="radio" name="q7" value="Visual"> Watch a tutorial</label><br>
+            <label><input type="radio" name="q7" value="Auditory"> Listen to someone explain it</label><br>
+            <label><input type="radio" name="q7" value="Kinesthetic"> Click around and explore</label><br>
+            <label><input type="radio" name="q7" value="Reflective">Structured with written materials</label>
 
         </div>
 
         <div class="question">
             <p>8. What do you enjoy most?</p>
             <label><input type="radio" name="q8" value="Visual"> Images, design, and visuals</label><br>
-            <label><input type="radio" name="q8" value="Auditory"> Podcasts or conversations<label><br>
-            <label><input type="radio" name="q8" value="Kinesthetic"> Physical activity or building things<label><br>
+            <label><input type="radio" name="q8" value="Auditory"> Podcasts or conversations</label><br>
+            <label><input type="radio" name="q8" value="Kinesthetic"> Physical activity or building things</label><br>
             <label><input type="radio" name="q8" value="Reflective">Reading or writing</label>
 
         </div>
@@ -93,7 +95,7 @@
           <div class="question">
             <p>9. When explaining something to others, you:</p>
             <label><input type="radio" name="q9" value="Visual"> Draw or show examples</label><br>
-            <label><input type="radio" name="q9" value="Auditory"> Talk it through<label><br>
+            <label><input type="radio" name="q9" value="Auditory"> Talk it through</label><br>
             <label><input type="radio" name="q9" value="Kinesthetic"> Demonstrate it<label><br>
             <label><input type="radio" name="q9" value="Reflective">Write it down</label>
 
@@ -105,10 +107,11 @@
             <label><input type="radio" name="q10" value="Auditory"> Poor explanations</label><br>
             <label><input type="radio" name="q10" value="Kinesthetic"> Too much sitting/listening</label><br>
             <label><input type="radio" name="q10" value="Reflective"> Lack of clear written instructions</label>
-
+<div class="form-footer"
         <button type="submit">Submit</button>
+         </div>
     
     </form>
-
+<footer><em>Note: This quiz is for entertainment purposes only and is not a scientifically validated assessment of learning styles.</em></footer>
 </body>
 </html>
