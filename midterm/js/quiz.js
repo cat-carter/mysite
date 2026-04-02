@@ -1,21 +1,25 @@
-"use strict"
+"use strict";
 
 const questions = document.querySelectorAll('.question');
+const btnStart = document.getElementById('btn-start');
 const btnNext = document.getElementById('btn-next');
 const btnBack = document.getElementById('btn-back');
 const btnSubmit = document.getElementById('btn-submit');
-const progressfill = document.querySelector('.progress-fill');
-const progressLanel = document.querySelector('.progress-label');
+const progressFill = document.querySelector('.progress-fill');
+const progressLabel = document.querySelector('.progress-label');
+const quizHeader = document.querySelector('.quiz-header');
+const progressWrapper = document.querySelector('.progress-wrapper');
+const formFooter = document.querySelector('.form-footer');
 
 let currentQuestion = 0;
 
 function showQuestion(index) {
-
-questions[index].classList.add('active');
+    questions.forEach(q => q.classList.remove('active'));
+    questions[index].classList.add('active');
 
 const percent = Math.round(((index + 1) / questions.length) * 100);
-    progressfill.style.width = percent + '%';
-    progressLanel.textContent = percent + '% Complete';
+    progressFill.style.width = percent + '%';
+    progressLabel.textContent = percent + '% Complete';
 
 btnBack.style.display = index === 0 ? 'none' : 'inline-block';
 
@@ -27,12 +31,25 @@ if (index === questions.length - 1) {
     btnSubmit.style.display = 'none';
 }
 
+}
+
+function lisAnswered() {
+    const radios = questions[currentQuestion].querySelectorAll('input[type="radio"]');
+    return ![...radios].some(r => r.checked);
+}
+
+btnStart.addEventListener('click', function() {
+    quizHeader.style.display = 'none';
+    progressWrapper.style.display = 'block';
+    formFooter.style.display = 'flex';
+    showQuestion(0);
+
+});
+
 btnBack.addEventListener('click', function() {
     currentQuestion--;
     showQuestion(currentQuestion);
 });
-
-showQuestion(0);
 
 btnNext.addEventListener('click', function() {
     if (lisAnswered()) {
@@ -42,3 +59,4 @@ btnNext.addEventListener('click', function() {
     currentQuestion++;
     showQuestion(currentQuestion);
 });
+
