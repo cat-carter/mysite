@@ -33,7 +33,7 @@ if (index === questions.length - 1) {
 
 }
 
-function lisAnswered() {
+function isAnswered() {
     const radios = questions[currentQuestion].querySelectorAll('input[type="radio"]');
     return ![...radios].some(r => r.checked);
 }
@@ -52,7 +52,7 @@ btnBack.addEventListener('click', function() {
 });
 
 btnNext.addEventListener('click', function() {
-    if (lisAnswered()) {
+    if (isAnswered()) {
     alert('Please answer the question before proceeding.');
     return;
     }
