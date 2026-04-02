@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personality Quiz</title>
+    <title>Learning Style Quiz</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS/quiz.js"></script>
+    <script src="js/quiz.js" defer></script>
 </head>
 <body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav logo">
+                <img src="images/logo.png" alt="Logo">
+                Learning Sty1e Quiz
+            </div>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+    
+            </div>
+        </nav>
+    </header>
+          
+    <main>
+        <section class="styles-preview">
+            <h2>Discover Your Learning Style</h2>
+            <div class="style-grid">
+                <img src="images/visual.png" alt="Visual Learner Icon">
+                <h3>Visual Learners</h3>
+                <p>Prefer images, diagrams, and videos to understand information.</p>
+                </div>
+                <div class="style-grid">
+                <img src="images/auditory.png" alt="Auditory Learner Icon">
+                <h3>Auditory Learners</h3>
+                <p>Learn best through listening to explanations, discussions, and audio materials.</p>
+                </div>
+                <div class="style-grid">
+                <img src="images/kinesthetic.png" alt="Kinesthetic Learner Icon">
+                <h3>Kinesthetic Learners</h3>
+                <p>Prefer hands-on activities and learning by doing.</p>
+                </div>
+                <div class="style-grid">
+                <img src="images/reflective.png" alt="Reflective Learner Icon">             
+                <h3>Reflective Learners</h3>
+                <p>Learn best through reading, writing, and thinking things through.</p>
+            </div>
+            </div>  
+    </main>
+
      <form id="quiz-form">
         
    <div class="quiz-header">
@@ -15,9 +56,15 @@
     <p> Everyone learns differently, wnether through seeing, listening, doing, or reflecting. Answer 10 quick questions to discover your natural learning style.</p>
 
     <p><b>10 Questions | 2 - 3 Minutes </b></p>
-    
+    <button type="button" id="btn-start">Start Quiz</button>
     </div>
 
+    <main>
+        <section class="styles-preview">
+            <h2>The Four Learning Styles</h2>
+            <div class="style-grid">
+                <h3>Visual Learners</h3>
+                <p>Prefer images, diagrams, and videos to understand information.</p>
         <div class="progress-wrapper">
         <div class="progress-bar">
             <div class="progress-fill" style="width: 0%"></div>
@@ -113,12 +160,11 @@
          </div>
 
             <div class="form-footer">
-        <button type="button" id="btn-back">Back</button>
-        <button type="button" id="btn-next">Next</button>
+        <button type="button" id="btn-back" style="display:none;">Back</button>
+        <button type="button" id="btn-next" style="display:none;">Next</button>
         <button type="submit" id="btn-submit" style="display: none;">Submit</button>
          </div>
     </form>
-
 <footer><em>Note: This quiz is for entertainment purposes only and is not a scientifically validated assessment of learning styles.</em></footer>
 </body>
 </html>
