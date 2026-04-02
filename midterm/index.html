@@ -10,9 +10,9 @@
 <body>
     <header>
         <nav class="main-nav">
-            <div class="nav logo">
+            <div class="nav-logo">
                 <img src="images/logo.png" alt="Logo">
-                Learning Sty1e Quiz
+                Learning Style Quiz
             </div>
                 <div class="nav-links">
                     <a href="#">Home</a>
@@ -26,28 +26,31 @@
     <main>
         <section class="styles-preview">
             <h2>Discover Your Learning Style</h2>
-            <div class="style-grid">
+            <div class="styles-grid">
+                <div class="style-card">
                 <img src="images/visual.png" alt="Visual Learner Icon">
                 <h3>Visual Learners</h3>
                 <p>Prefer images, diagrams, and videos to understand information.</p>
                 </div>
-                <div class="style-grid">
+                <div class="style-card">
                 <img src="images/auditory.png" alt="Auditory Learner Icon">
                 <h3>Auditory Learners</h3>
                 <p>Learn best through listening to explanations, discussions, and audio materials.</p>
                 </div>
-                <div class="style-grid">
+                <div class="style-card">
                 <img src="images/kinesthetic.png" alt="Kinesthetic Learner Icon">
                 <h3>Kinesthetic Learners</h3>
                 <p>Prefer hands-on activities and learning by doing.</p>
                 </div>
-                <div class="style-grid">
+                <div class="style-card">
                 <img src="images/reflective.png" alt="Reflective Learner Icon">             
                 <h3>Reflective Learners</h3>
                 <p>Learn best through reading, writing, and thinking things through.</p>
             </div>
-            </div>  
-    </main>
+     </div>
+
+     <secton class="quiz-section">
+            <h2>Take the Quiz</h2>
 
      <form id="quiz-form">
         
@@ -59,18 +62,11 @@
     <button type="button" id="btn-start">Start Quiz</button>
     </div>
 
-    <main>
-        <section class="styles-preview">
-            <h2>The Four Learning Styles</h2>
-            <div class="style-grid">
-                <h3>Visual Learners</h3>
-                <p>Prefer images, diagrams, and videos to understand information.</p>
-        <div class="progress-wrapper">
-        <div class="progress-bar">
-            <div class="progress-fill" style="width: 0%"></div>
+      <div class="progress-wrapper"> 
+    <div class="progress-bar">
+    <div class="progress-fill" style="width: 0%"></div>
         </div>
         <p class="progress-label">0% Complete</p>
-    </div>
     <div class="question">
             <p>1. When learning something new, you prefer:</p>
             <label><input type="radio" name="q1" value="Visual"> Watch a video or see a demonstration</label><br>
@@ -165,6 +161,10 @@
         <button type="submit" id="btn-submit" style="display: none;">Submit</button>
          </div>
     </form>
+    </section>  
+</main>
+    
 <footer><em>Note: This quiz is for entertainment purposes only and is not a scientifically validated assessment of learning styles.</em></footer>
+    
 </body>
 </html>

@@ -8,7 +8,7 @@
     --color-header-gradient: linear-gradient(135deg, #e879f9 0%, #a855f7 45%, #4338ca 100%);
 
     --color-option-bg: #f1f5f9;
-    --color-option-hover: #dbeafe;
+    --color-option-hover: #b0cdf3;
     --color-option-selected-bg: #eff6ff;
     --color-option-selected-border: #3b82f6;
 
@@ -24,10 +24,8 @@
     --font-base: 'Segoe UI', sans-serif;
 }
 
-quiz-header {
+.quiz-header {
     text-align: center;
-    color: var(--color-header-gradient);
-    margin-bottom: 20px;
 }
 
 body {
@@ -103,24 +101,48 @@ p {
     transition: color 0.2s;
 }
 
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
 .styles-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px 40px;
 }
 
+.styles-grid img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--radius-card);
+   margin-top: 10px;
+}
+
 .styles-preview {
-    max-width: 660p;
-    margin: 0 auto; 30px;
+    max-width: 660px;
+    margin: 0 auto 30px;
     padding: 0 20px;
 }
 
 .style-card {
-    color: #ffffff;
-    font-size: 0.85rem;
-
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.style-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+
+.style-card h3 {
+    color: var(--color-text-dark);
+    margin-bottom: 4px;
+}
     
 
 #quiz-form {
@@ -166,10 +188,8 @@ p {
 }
 
 .question label:hover {
-    background: var(--color-primary);
+    background: var(--color-option-hover);
     border-color: #93c5fd;
-    transform: translateY(-1px);
-   
 }
 
 .question input[type="radio"] {
@@ -196,8 +216,10 @@ p {
    font-weight: 500;
 }
 
-/*.form-footer {
- display: none;*/
+.progress-wrapper {
+    display: none;
+}
+
   
 
 footer {
