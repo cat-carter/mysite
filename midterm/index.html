@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personality Quiz</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/quiz.js"></script>
 </head>
 <body>
+     <form id="quiz-form">
+        
+   <div class="quiz-header">
     <h1>What is your learning style?</h1>
-    <p> Everyone learns differently, wheather through seeing, listening, doing, or reflecting. Answer 10 quick questions to discover your natural learning style.</p>
+    <p> Everyone learns differently, wnether through seeing, listening, doing, or reflecting. Answer 10 quick questions to discover your natural learning style.</p>
 
-    <p>10 Questions | 2-3 Mintutes </p>
+    <p><b>10 Questions | 2 - 3 Minutes </b></p>
     
-`
-    <form id="quiz-form">
-        <div class="progress-wrapper"
+    </div>
+
+        <div class="progress-wrapper">
         <div class="progress-bar">
-            <div class="progress fill" style="width: 0%"></div>
+            <div class="progress-fill" style="width: 0%"></div>
         </div>
         <p class="progress-label">0% Complete</p>
     </div>
@@ -26,7 +30,6 @@
             <label><input type="radio" name="q1" value="Auditory"> Listen to an explanation or discussion</label><br>
             <label><input type="radio" name="q1" value="Kinesthetic"> Try it out yourself right away</label><br>
             <label><input type="radio" name="q1" value="Reflective"> Read about it and think it through first</label>
-            </div>
         </div>
 
         <div class="question">
@@ -52,7 +55,7 @@
             <label><input type="radio" name="q4" value="Visual"> Color-coded notes or charts</label><br>
             <label><input type="radio" name="q4" value="Auditory"> Talking it out or hearing it</label><br>
             <label><input type="radio" name="q4" value="Kinesthetic"> Hands-on practice</label><br>
-            <label><input type="radio" name="q4" value="Reflective"> Writing things down repeate</label>
+            <label><input type="radio" name="q4" value="Reflective"> Writing things down repeatedly</label>
 
         </div>
         
@@ -60,7 +63,7 @@
             <p>5. If you forget something, you:</p>
             <label><input type="radio" name="q5" value="Visual"> Picture it in your head</label><br>
             <label><input type="radio" name="q5" value="Auditory"> Replay what you heard</label><br>
-            <label><input type="radio" name="q5" value="Kinesthetic"> Recall what you were doing<label><br>
+            <label><input type="radio" name="q5" value="Kinesthetic"> Recall what you were doing</label><br>
             <label><input type="radio" name="q5" value="Reflective"> Rewrite or reread it</label>
 
         </div>
@@ -79,7 +82,7 @@
             <label><input type="radio" name="q7" value="Visual"> Watch a tutorial</label><br>
             <label><input type="radio" name="q7" value="Auditory"> Listen to someone explain it</label><br>
             <label><input type="radio" name="q7" value="Kinesthetic"> Click around and explore</label><br>
-            <label><input type="radio" name="q7" value="Reflective">Structured with written materials</label>
+            <label><input type="radio" name="q7" value="Reflective">Read the manual or documentations</label>
 
         </div>
 
@@ -96,7 +99,7 @@
             <p>9. When explaining something to others, you:</p>
             <label><input type="radio" name="q9" value="Visual"> Draw or show examples</label><br>
             <label><input type="radio" name="q9" value="Auditory"> Talk it through</label><br>
-            <label><input type="radio" name="q9" value="Kinesthetic"> Demonstrate it<label><br>
+            <label><input type="radio" name="q9" value="Kinesthetic"> Demonstrate it</label><br>
             <label><input type="radio" name="q9" value="Reflective">Write it down</label>
 
         </div>
@@ -107,11 +110,14 @@
             <label><input type="radio" name="q10" value="Auditory"> Poor explanations</label><br>
             <label><input type="radio" name="q10" value="Kinesthetic"> Too much sitting/listening</label><br>
             <label><input type="radio" name="q10" value="Reflective"> Lack of clear written instructions</label>
-<div class="form-footer"
-        <button type="submit">Submit</button>
          </div>
-    
+
+            <div class="form-footer">
+        <button type="button" id="btn-back">Back</button>
+        <button type="button" id="btn-next">Next</button>
+         </div>
     </form>
+
 <footer><em>Note: This quiz is for entertainment purposes only and is not a scientifically validated assessment of learning styles.</em></footer>
 </body>
 </html>

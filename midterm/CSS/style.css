@@ -1,11 +1,11 @@
 
 
 :root{
-    --color-bg-gradient-start: #a855f7;
+    --color-bg-gradient-start: #e879f9;
     --color-bg-gradient-end: #4f46e5;
 
     --color-card-bg: #ffffff;
-    --color-header-gradient: linear-gradient(160deg, #fde8c8 0%, #fce4ec 30%, #c7e8f9 70%, #b3d9f7 100%);
+    --color-header-gradient: linear-gradient(135deg, #e879f9 0%, #a855f7 45%, #4338ca 100%);
 
     --color-option-bg: #f1f5f9;
     --color-option-hover: #dbeafe;
@@ -24,6 +24,12 @@
     --font-base: 'Segoe UI', sans-serif;
 }
 
+quiz-header {
+    text-align: center;
+    color: var(--color-header-gradient);
+    margin-bottom: 20px;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -37,34 +43,29 @@ body {
 
 #quiz-form {
     background: var(--color-card-bg);
-    padding: 30px;
+    padding: 0;
     border-radius: 20px;
+    overflow: hidden;
     box-shadow: 0 24px 60px rgba(0,0,0,0.25);
     max-width: 660px;
     width: 100%;
 }
 
-#quiz-form::before {
-    content: "What is your learning style?";
-    display: block;
-    padding: 36px 40px 28px;
-    background: var(--color-header-gradient);
-    font-size: 1.55rem;
-    font-weight: 700;
-    text-align: center;
-    color: #1a1a2e;
-}
-
 .question {
     padding: 28px 40px;
     border-bottom: 1px solid var(--color-border-light);
+    display: none;
 }
 
+.question.active {
+    display: block;
+}
 .question p {
     font-size: 1.15rem;
     text-align: center;
     color: var(--color-text-dark);
     margin-bottom: 16px;
+    
 }
 
 .question label {
@@ -75,13 +76,14 @@ body {
     padding: 14px 22px;
     border-radius: 999px;
     border: 2px solid transparent;
+    margin-bottom: 10px;
     cursor: pointer;
     background: var(--color-option-bg);
     transition: background 0.18s, border-color 0.18s, transform 0.1s;
 }
 
 .question label:hover {
-    background: var(--color-option-hover);
+    background: var(--color-primary);
     border-color: #93c5fd;
     transform: translateY(-1px);
    
@@ -99,8 +101,8 @@ body {
 }
 
     .question input[type="radio"]:checked {
-        border-color: var(--color-option-selected-bg);
-        background: var(--color-option-selected-bg);
+        border-color: var(--color-primary);
+        background: var(--color-primary);
         box-shadow: inset 0 0 0 3px #fff;
 }
 
@@ -111,10 +113,11 @@ body {
    font-weight: 500;
 }
 
+
 footer {
     margin-top: 20px;
     font-size: 0.8rem;
-    color: var(--color-text-mid);
+    color: #ffffff;
     text-align: center;
     max-width: 520px;
 }
