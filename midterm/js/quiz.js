@@ -40,7 +40,7 @@ function isAnswered() {
 
 btnStart.addEventListener('click', function() {
     document.getElementById('hero-section').style.display = 'none';
-    quizHeader.style.display = 'none';
+    quizSection.style.display = 'block';
     progressWrapper.style.display = 'block';
     formFooter.style.display = 'flex';
     showQuestion(0);
