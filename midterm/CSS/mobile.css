@@ -1,0 +1,17 @@
+@import "/midterm/CSS/style.css";
+
+nav {
+    position: static;
+    width: 100%;
+    grid-column: 1;
+    grid-row: auto;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+    font-size: 15px;
+    display: none;
+}
+
+footer {
+    grid-column: 1;
+    align-items: center;
+}
