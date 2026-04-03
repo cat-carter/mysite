@@ -90,12 +90,15 @@ document.getElementById('quiz-form').addEventListener('submit', function(e){
             const value = selected.value;
             if (scores.hasOwnProperty(value)) {
                 scores[value]++;
-            }
         }
     });
 
-    // Optional: process scores and show result
-    console.log(scores);
-});
+    // Find the style with the highest score 
+    const winner = Object.keys(scores).reduce((a, b) => scores [a] > scores[b] ? a : b);
 
+  // Show the result
+    document.getElementById('result-icon').textContent = resultData[winner].icon;
+    document.getElementById('result-title').textContent = resultData[winner].title;
+    document.getElementById('result-description').textContent = resultData[winner].description;
 
+quizSection.style.display = 'none';
