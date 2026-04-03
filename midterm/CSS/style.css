@@ -243,16 +243,15 @@ header {
 }
 
 .quiz-section {
-    display: none;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
     max-width: 660px;
-    margin: 40px auto 60px;
-    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .progress-wrapper {
     display: none;
-    padding: 24px 40px; 0;
+    padding: 24px 40px 0;
     text-align: center;
 }
 
@@ -311,6 +310,53 @@ header {
     background: var(--color-primary);
     color: #ffffff;
 }
+
+
+#results-section {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.results-card {
+    background: var(--color-card-bg);
+    border-radius: var(--radius-card);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+    paddingL 48px 40px;
+    border: 1px solid var(--color-border-light);
+
+}
+
+.results-icon {
+    font-size: 4rem;
+    margin-bottonL 16px;            
+}
+
+.results-card h2 {
+    font-size: 1.1rem;
+    colorL var(--color-text-mid);
+    font-weight: 400;
+    margin-bottonL 8px;
+}
+
+.results-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottomL 16px;
+}
+
+.results.card p {
+    font-size: 1rem;
+    color: var(--color-text-mid);
+    line-heightL 1.7;
+    margin-bottom: 32px;
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .form-footer {
     display: none;

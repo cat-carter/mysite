@@ -91,14 +91,18 @@ document.getElementById('quiz-form').addEventListener('submit', function(e){
             if (scores.hasOwnProperty(value)) {
                 scores[value]++;
         }
+    }
+
     });
 
     // Find the style with the highest score 
     const winner = Object.keys(scores).reduce((a, b) => scores [a] > scores[b] ? a : b);
 
   // Show the result
-    document.getElementById('result-icon').textContent = resultData[winner].icon;
     document.getElementById('result-title').textContent = resultData[winner].title;
     document.getElementById('result-description').textContent = resultData[winner].description;
 
 quizSection.style.display = 'none';
+document.getElementById('results-section').style.display = 'block';
+
+});
