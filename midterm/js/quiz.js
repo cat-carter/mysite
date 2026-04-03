@@ -60,3 +60,42 @@ btnNext.addEventListener('click', function() {
     showQuestion(currentQuestion);
 });
 
+const resultData = {
+    Visual: {
+        title: 'Visual Learner',
+        description: 'You learn best through images, diagrams, charts, and videos. Try using colour-coded notes, mind maps, and visual aids when studying.'
+    },
+    Auditory: {
+        title: 'Auditory Learner',
+        description: 'You learn best by listening and discussing. Try reading aloud, joining study groups, and listening to recorded lectures.'
+    },
+    Kinesthetic: {
+        title: 'Kinesthetic Learner',
+        description: 'You learn best through hands-on practice. Try building things, role-playing scenarios, and taking regular breaks to move.'
+    },
+    Reflective: {
+        title: 'Reflective Learner',
+        description: 'You learn best through reading and writing. Try journaling, making detailed notes, and reviewing material regularly.'
+    }
+};
+
+document.getElementById('quiz-form').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const scores = { Visual: 0, Auditory: 0, Kinesthetic: 0, Reflective: 0 };
+
+    questions.forEach(function(question) {
+        const selected = question.querySelector('input[type="radio"]:checked');
+        if (selected) {
+            const value = selected.value;
+            if (scores.hasOwnProperty(value)) {
+                scores[value]++;
+            }
+        }
+    });
+
+    // Optional: process scores and show result
+    console.log(scores);
+});
+
+

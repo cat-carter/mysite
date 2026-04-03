@@ -11,7 +11,7 @@
     --color-primary-dark: #5a52d5;
     --color-text-dark: #1f1f29;
     --color-text-mid: #5f5f6e;
-    --color-border-light: #ebebf0;
+    --color-border-light: #c2c2f6;
     --radius-pill: 999px;
     --radius-card: 18px;
     --font-base: 'Segoe UI', sans-serif;
@@ -253,14 +253,23 @@ header {
 .progress-wrapper {
     display: none;
     padding: 24px 40px; 0;
+    text-align: center;
 }
 
 .progress-bar {
-    height: 8px;
+    height: 16px;
     background: var(--color-border-light);
     border-radius: var(--radius-pill);
     overflow: hidden;
-    margin-bottom: 6px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.progress-label {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--color-text-mid);
+    text-align: center;
 }
 
 #btn-start {
