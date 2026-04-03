@@ -24,49 +24,24 @@
     </header>
           
     <main>
-        <section class="styles-preview">
-            <h2>Discover Your Learning Style</h2>
-            <div class="styles-grid">
-                <div class="style-card">
-                <img src="images/visual.png" alt="Visual Learner Icon">
-                <h3>Visual Learners</h3>
-                <p>Prefer images, diagrams, and videos to understand information.</p>
-                </div>
-                <div class="style-card">
-                <img src="images/auditory.png" alt="Auditory Learner Icon">
-                <h3>Auditory Learners</h3>
-                <p>Learn best through listening to explanations, discussions, and audio materials.</p>
-                </div>
-                <div class="style-card">
-                <img src="images/kinesthetic.png" alt="Kinesthetic Learner Icon">
-                <h3>Kinesthetic Learners</h3>
-                <p>Prefer hands-on activities and learning by doing.</p>
-                </div>
-                <div class="style-card">
-                <img src="images/reflective.png" alt="Reflective Learner Icon">             
-                <h3>Reflective Learners</h3>
-                <p>Learn best through reading, writing, and thinking things through.</p>
-            </div>
-     </div>
 
-     <secton class="quiz-section">
-            <h2>Take the Quiz</h2>
+        <section id="hero-section" class="hero">
+            <h1>Discover Your Learning Style</h1>
+            <p>Take our quick quiz to find out if you're a visual, auditory, kinesthetic, or reflective learner!</p>
+            <button id="btn-start">Start Quiz</button>
+            <p class="hero-meta">10 Questions | 2 - 3 Minutes</p>
+        </section>
+    
+     <section id="quiz-section" class="quiz-section">
 
      <form id="quiz-form">
-        
-   <div class="quiz-header">
-    <h1>What is your learning style?</h1>
-    <p> Everyone learns differently, wnether through seeing, listening, doing, or reflecting. Answer 10 quick questions to discover your natural learning style.</p>
-
-    <p><b>10 Questions | 2 - 3 Minutes </b></p>
-    <button type="button" id="btn-start">Start Quiz</button>
-    </div>
 
       <div class="progress-wrapper"> 
     <div class="progress-bar">
     <div class="progress-fill" style="width: 0%"></div>
         </div>
         <p class="progress-label">0% Complete</p>
+      </div>
     <div class="question">
             <p>1. When learning something new, you prefer:</p>
             <label><input type="radio" name="q1" value="Visual"> Watch a video or see a demonstration</label><br>
@@ -162,6 +137,33 @@
          </div>
     </form>
     </section>  
+
+    <section class="styles-preview">
+        <h2>Learning Styles Overview</h2>
+        <p>Here's a quick overview of the four learning styles:</p>
+    <div class="styles-grid">
+                <div class="style-card">
+                <img src="images/visual.png" alt="Visual Learner Icon">
+                <h3>Visual Learners</h3>
+                <p>Prefer images, diagrams, and videos to understand information.</p>
+                </div>
+                <div class="style-card">
+                <img src="images/auditory.png" alt="Auditory Learner Icon">
+                <h3>Auditory Learners</h3>
+                <p>Learn best through listening to explanations, discussions, and audio materials.</p>
+                </div>
+                <div class="style-card">
+                <img src="images/kinesthetic.png" alt="Kinesthetic Learner Icon">
+                <h3>Kinesthetic Learners</h3>
+                <p>Prefer hands-on activities and learning by doing.</p>
+                </div>
+                <div class="style-card">
+                <img src="images/reflective.png" alt="Reflective Learner Icon">             
+                <h3>Reflective Learners</h3>
+                <p>Learn best through reading, writing, and thinking things through.</p>
+            </div>
+    </div>
+             </section>
 </main>
     
 <footer><em>Note: This quiz is for entertainment purposes only and is not a scientifically validated assessment of learning styles.</em></footer>

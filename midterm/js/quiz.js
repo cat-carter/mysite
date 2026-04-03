@@ -7,7 +7,7 @@ const btnBack = document.getElementById('btn-back');
 const btnSubmit = document.getElementById('btn-submit');
 const progressFill = document.querySelector('.progress-fill');
 const progressLabel = document.querySelector('.progress-label');
-const quizHeader = document.querySelector('.quiz-header');
+const quizSection = document.querySelector('.quiz-section');
 const progressWrapper = document.querySelector('.progress-wrapper');
 const formFooter = document.querySelector('.form-footer');
 
@@ -39,11 +39,11 @@ function isAnswered() {
 }
 
 btnStart.addEventListener('click', function() {
+    document.getElementById('hero-section').style.display = 'none';
     quizHeader.style.display = 'none';
     progressWrapper.style.display = 'block';
     formFooter.style.display = 'flex';
     showQuestion(0);
-
 });
 
 btnBack.addEventListener('click', function() {
