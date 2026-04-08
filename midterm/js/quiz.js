@@ -17,19 +17,19 @@ function showQuestion(index) {
     questions.forEach(q => q.classList.remove('active'));
     questions[index].classList.add('active');
 
-const percent = Math.round(((index + 1) / questions.length) * 100);
+    const percent = Math.round((index / questions.length) * 100);
     progressFill.style.width = percent + '%';
     progressLabel.textContent = percent + '% Complete';
 
-btnBack.style.display = index === 0 ? 'none' : 'inline-block';
+    btnBack.style.display = index === 0 ? 'none' : 'inline-block';
 
-if (index === questions.length - 1) {
-    btnNext.style.display = 'none';
-    btnSubmit.style.display = 'inline-block';
-}   else {
-    btnNext.style.display = 'inline-block';
-    btnSubmit.style.display = 'none';
-}
+    if (index === questions.length - 1) {
+        btnNext.style.display = 'none';
+        btnSubmit.style.display = 'inline-block';
+    }   else {
+        btnNext.style.display = 'inline-block';
+        btnSubmit.style.display = 'none';
+    }
 
 }
 
@@ -43,6 +43,8 @@ btnStart.addEventListener('click', function() {
     quizSection.style.display = 'block';
     progressWrapper.style.display = 'block';
     formFooter.style.display = 'flex';
+    progressFill.style.width = '0%';
+    progressLabel.textContent = '0% Complete';
     showQuestion(0);
 });
 
