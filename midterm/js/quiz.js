@@ -40,7 +40,7 @@ function isAnswered() {
 
 btnStart.addEventListener('click', function() {
     document.getElementById('hero-section').style.display = 'none';
-    quizSection.style.display = 'block';
+    quizSection.style.display = 'grid';
     progressWrapper.style.display = 'block';
     formFooter.style.display = 'flex';
     progressFill.style.width = '0%';
@@ -83,6 +83,11 @@ const resultData = {
 
 document.getElementById('quiz-form').addEventListener('submit', function(e){
     e.preventDefault();
+
+    if (isAnswered()) {
+        alert('Please answer the last question before submitting.');
+        return;
+    }
 
     const scores = { Visual: 0, Auditory: 0, Kinesthetic: 0, Reflective: 0 };
 

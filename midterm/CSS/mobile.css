@@ -1,4 +1,4 @@
-@import "/midterm/CSS/style.css";
+@import "style.css";
 
 nav {
     position: static;
@@ -6,8 +6,9 @@ nav {
     grid-column: 1;
     grid-row: auto;
     margin-bottom: 15px;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--color-border-light);
     font-size: 15px;
+    display: none;
 }
 
 .main-nav {
