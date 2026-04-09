@@ -331,34 +331,34 @@ header {
     background: var(--color-card-bg);
     border-radius: var(--radius-card);
     box-shadow: 0 8px 40px rgba(0,0,0,0.08);
-    paddingL 48px 40px;
+    padding: 48px 40px;
     border: 1px solid var(--color-border-light);
 
 }
 
 .results-icon {
     font-size: 4rem;
-    margin-bottonL 16px;            
+    margin-bottom: 16px;            
 }
 
 .results-card h2 {
     font-size: 1.1rem;
-    colorL var(--color-text-mid);
+    color: var(--color-text-mid);
     font-weight: 400;
-    margin-bottonL 8px;
+    margin-bottom: 8px;
 }
 
 .results-card h3 {
     font-size: 2rem;
     font-weight: 700;
     color: var(--color-primary);
-    margin-bottomL 16px;
+    margin-bottom: 16px;
 }
 
-.results.card p {
+.results-card p {
     font-size: 1rem;
     color: var(--color-text-mid);
-    line-heightL 1.7;
+    line-height: 1.7;
     margin-bottom: 32px;
     max-width: 460px;
     margin-left: auto;
@@ -381,4 +381,4 @@ footer {
     color: var(--color-text-mid);
     text-align: center;
     max-width: 100%;
-}
+}}
