@@ -17,7 +17,7 @@ function showQuestion(index) {
     questions.forEach(q => q.classList.remove('active'));
     questions[index].classList.add('active');
 
-    const percent = Math.round((index / questions.length) * 100);
+    const percent = Math.round(((index + 1) / questions.length) * 100);
     progressFill.style.width = percent + '%';
     progressLabel.textContent = percent + '% Complete';
 
@@ -49,7 +49,7 @@ btnStart.addEventListener('click', function() {
 });
 
 btnBack.addEventListener('click', function() {
-    currentQuestion--;
+
     showQuestion(currentQuestion);
 });
 
