@@ -208,6 +208,7 @@ header {
     align-items: left;
     gap: 12px;
     width: 100%;
+    max-width: 480px;
     padding: 14px 20px;
     border-radius: var(--radius-pill);
     border: 2px solid transparent;
